@@ -22,8 +22,9 @@ function getTimeFromServer() {
     if (xhr.readyState == 4 && xhr.status == 200) {
       var response = JSON.parse(xhr.responseText);
       remainingTime = response.difference;
-      set_time(remainingTime);
-      //set_time(remainingTime)      
+      //if (remainingTime){
+      //  set_time(remainingTime);
+      set_time(remainingTime);    
     }
   }
 }
