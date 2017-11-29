@@ -38,7 +38,6 @@ window.onload = function () {
   setInterval(function () {
     remainingTime--;
     set_time(remainingTime);
-    console.log(remainingTime);
   }, 1000)
   setInterval(function(){
     getTimeFromServer();
