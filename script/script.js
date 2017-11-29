@@ -1,12 +1,13 @@
 var remainingTime;
 
 function set_time(t) {
-  var days = Math.floor(remainingTime / 86400);
-  var hours = Math.floor((remainingTime % 86400) / 3600)
-  var minutes = Math.floor((remainingTime % 3600) / 60)
-  var seconds = Math.floor(remainingTime % 60)
-  document.getElementById("test").innerText = days + " д.  " + hours + " ч.  " + minutes + " мин.  ";
-  // + seconds + "c. "
+  if (t){
+    var days = Math.floor(remainingTime / 86400);
+    var hours = Math.floor((remainingTime % 86400) / 3600)
+    var minutes = Math.floor((remainingTime % 3600) / 60)
+    var seconds = Math.floor(remainingTime % 60)
+    document.getElementById("test").innerText = days + " д.  " + hours + " ч.  " + minutes + " мин.  ";
+  }// + seconds + "c. "
 }
 
 function getTimeFromServer() {
