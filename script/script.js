@@ -21,8 +21,7 @@ function getTimeFromServer() {
   function processRequest(e) {
     if (xhr.readyState == 4 && xhr.status == 200) {
       var response = JSON.parse(xhr.responseText);
-      remainingTime = response.difference
-      console.log(remainingTime)
+      remainingTime = response.difference;
       set_time(remainingTime);
       //set_time(remainingTime)      
     }
