@@ -7,7 +7,7 @@ function set_time(t) {
       var hours = Math.floor((remainingTime % 86400) / 3600)
       var minutes = Math.floor((remainingTime % 3600) / 60)
       var seconds = Math.floor(remainingTime % 60)
-      document.getElementById("title").innerText = "Надя вернется через;
+      document.getElementById("title").innerText = "Надя вернется через";
       document.getElementById("test").innerText = days + " д.  " + hours + " ч.  " + minutes + " мин.  ";
     }
     else {
