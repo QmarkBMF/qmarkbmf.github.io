@@ -2,7 +2,7 @@ var remainingTime;
 
 function set_time(t) {
   if (t){
-    if (remainingTime != 0){
+    if (remainingTime > 0){
       var days = Math.floor(remainingTime / 86400);
       var hours = Math.floor((remainingTime % 86400) / 3600)
       var minutes = Math.floor((remainingTime % 3600) / 60)
